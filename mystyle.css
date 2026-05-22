@@ -13,6 +13,7 @@
     --text-color: black;
     --main-color: #fbe8ce;
     --second-text-color: black;
+    --nav-color: rgba(244, 230, 149, 0.8);
 }
 html{
     font-size: 60%;
@@ -414,10 +415,10 @@ a{
         right: 0;
         width: 50%;
         padding: 1rem 3rem;
-        background: rgba(0, 0, 0, 0.8);
+        background: var(--nav-color);
         border-bottom-left-radius: 2rem;
-        border-left: 2px solid var(--main-color);
-        border-bottom: 2px solid var(--main-color);
+        border-left: 2px solid var(--second-text-color);
+        border-bottom: 2px solid var(--second-text-color);
         display: none;
     }
     .navbar a{
@@ -426,7 +427,7 @@ a{
         margin: 3rem 0;
         color: var(--text-color)
     }
-    .navbar .active{
+    .navbar.active{
         display: block;
     }
     .gradient-btn{
@@ -442,7 +443,7 @@ a{
         text-align: center;
     }
     .home-img img{
-        width: 56vw;
+        width: 45vw;
     }
     .about{
         flex-direction: column-reverse;
@@ -453,7 +454,7 @@ a{
         margin:2rem 0;
     }
     .about img{
-        width: 52vw;
+        width: 42vw;
     }
     .contact form{
         flex-direction: column;
