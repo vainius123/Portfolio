@@ -125,7 +125,7 @@ a{
 }
 
 .home-img img{
-    width: 25vw;
+    width: 26vw;
     border-radius: 25%;
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.4 ease-in-out;
@@ -198,7 +198,7 @@ a{
 }
 .about-img img{
     width: 25vw;
-    border-radius: 25%;
+    border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.4s ease-in-out; 
 }
@@ -380,6 +380,12 @@ a{
     resize: none;
 }
 
+input::placeholder, textarea::placeholder{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 .footer{
     background-color: var(--bg-color);
     padding: 50px 0;
@@ -404,6 +410,8 @@ a{
 .footer ul li a:hover{
     border-bottom: 3px solid var(--main-color);
 }
+
+/*Interactive web page*/
 
 @media(max-width: 1285px){ /*1285px*/
     #menu-icon{
